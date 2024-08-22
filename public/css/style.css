@@ -1,0 +1,275 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+/* FOOTER */
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-st {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.f-info {
+  text-align: center;
+  height: 8rem;
+  display: flex;
+  background-color: #ebebeb;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+.first {
+  text-decoration: none !important;
+}
+/* Card Effect */
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+.form-label {
+  margin: 0 !important;
+}
+
+.add-button {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+.search-button {
+  background-color: #fe424d;
+  border-radius: 50%;
+  border-color: none;
+  color: white;
+}
+.search-button:hover {
+  background-color: #be2c36;
+  color: white;
+}
+.search-inp {
+  border-radius: 25px;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+}
+/* Show page */
+.show-img {
+  height: 30vh;
+}
+
+.btns {
+  display: flex;
+}
+
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#reviewStar {
+  color: goldenrod !important;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+#map {
+  height: 500px;
+}
+
+#filters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.filter {
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
+  text-align: center;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  opacity: 0.8;
+}
+
+.filter > p {
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: lightgray;
+  text-underline-offset: 0.5rem;
+}
+
+.filter > div > i {
+  font-size: 1.7rem;
+}
+
+.tax-toggle {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.firstf {
+  display: flex;
+}
+.tax-id {
+  font-size: 0.7rem;
+}
+.none {
+  display: none;
+}
+
+.price-container {
+  position: relative;
+  height: 1.5em;
+}
+
+.price-container p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+.tax-toggle {
+  margin-top: 0.7rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.inline-select {
+  display: inline-block;
+  width: auto;
+  margin-right: 1rem;
+}
+.italic-bold {
+  font-style: italic;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .filter {
+    margin-right: 1.3rem;
+  }
+  .filter:nth-child(n + 6) {
+    display: none;
+  }
+  .form-check-label::after {
+    content: "Include Taxes";
+    font-size: 1rem;
+  }
+
+  .form-check-label {
+    font-size: 0;
+  }
+}
+@media (max-width: 560px) {
+  .filter:nth-child(n + 6) {
+    display: none;
+  }
+  .form-check-label {
+    display: none;
+  }
+  .tax-toggle {
+    display: none;
+  }
+  .firstf {
+    width: 100vw;
+  }
+}
+@media (max-width: 768px) {
+  .filter {
+    margin-right: 1.3rem;
+  }
+  .filter:nth-child(n + 6) {
+    display: none;
+  }
+  .form-check-label::after {
+    content: "Include Taxes";
+    font-size: 1rem;
+  }
+
+  .form-check-label {
+    font-size: 0;
+  }
+}
+@media (max-width: 560px) {
+  .filter:nth-child(n + 6) {
+    display: none;
+  }
+  .form-check-label {
+    display: none;
+  }
+  .tax-toggle {
+    display: none;
+  }
+  .firstf {
+    width: 100vw;
+  }
+}

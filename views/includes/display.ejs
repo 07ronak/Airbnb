@@ -1,0 +1,31 @@
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+  <% for(let listing of allListings) {%>
+  <a class="first" href="/listing/<%= listing._id %>">
+    <div class="card col listing-card">
+      <img
+        src="<%= listing.image.url %>"
+        class="card-img-top"
+        alt="listing_image"
+        style="height: 20rem"
+      />
+      <div class="card-img-overlay"></div>
+      <div class="card-body">
+        <h5 class="card-title"><%= listing.title %></h5>
+        <div class="price-container">
+          <p class="card-text price none" id="price-after">
+            &#8377; <% let newPrice
+            =((1.18)*listing.price).toLocaleString("en-IN"); %><%= newPrice %> /
+            night
+          </p>
+          <p class="card-text price" id="price-before">
+            &#8377;<%= listing.price.toLocaleString("en-IN") %>/ night
+            <i class="tax-id">&nbsp;&nbsp;+18% GST</i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <% } %>
+</div>
+
+<script src="/js/taxesTotal.js"></script>
